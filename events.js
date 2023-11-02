@@ -44,3 +44,20 @@ addButton.addEventListener("click", () => {
   input.value = ""
   input.focus()
 })
+
+
+//? input elementi üzerinde iken klavyeden bir tusa basildigin tetiklenir.
+input.addEventListener("keyup", (event) => {
+    //   console.log(event)
+    //   console.log(event.target)
+    //   console.log(event.target.value)
+    //   console.log(event.keyCode)
+    //   console.log(event.code)
+  
+    //?  basilan tus enter ise
+    if (event.code === "Enter") {
+      //? add butonun click fonkisyonu cagiriyoruz
+      addButton.click()
+    }
+  })
+  
